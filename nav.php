@@ -1,4 +1,5 @@
 <nav>
+    <a href="index.php">Home</a>
     <a href="smuggs.php">Smuggs</a>
     <a href="bolton.php">Bolton</a>
     <a href="stowe.php">Stowe</a>
