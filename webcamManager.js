@@ -2,8 +2,8 @@ class WebcamManager {
     constructor() {
         this.cachedXML = null;
         this.lastFetch = null;
-        this.cacheDuration = 3 * 60 * 1000; // 3 minutes
-        this.apiUrl = 'https://jwtaylor.w3.uvm.edu/SkiCam/api/webCamProxy.php'; // Silk proxy URL
+        this.cacheDuration = 10 * 60 * 1000; // 10 minutes (That's what the API refresh rate is)
+        this.apiUrl = 'https://jwtaylor.w3.uvm.edu/SkiCam/api/webcamProxy.php'; // Silk proxy URL
         this.isFetching = false;
     }
 

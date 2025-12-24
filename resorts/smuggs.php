@@ -3,7 +3,7 @@
     <h1>Smuggs</h1>
     <h2>Weather</h2>
 
-    
+
 
     <h2>Info</h2>
     <h3>Address:</h3><body>4323 VT-108, Jeffersonville, VT 05464</body>
@@ -18,7 +18,7 @@
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
     <h2>Traffic Cameras</h2>
-    <script src="/SkiCam/trafficCamXML.js"></script>
+    <script src="/SkiCam/webcamManager.js"></script>
     <img id="webcam" alt="Traffic Camera">
     <script>
         const webcamManager = new WebcamManager();
