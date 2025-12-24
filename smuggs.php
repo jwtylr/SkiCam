@@ -20,13 +20,29 @@
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
     <h2>Traffic Cameras</h2> <!-- TODO: Change source to xml with server-side filtering and cache.  -->
-    <img alt="" 
-        fetchpriority="high" 
-        loading="eager" 
-        decoding="async" 
-        data-nimg="fill" 
-        src="https://ie.trafficland.com/v2.0/455317/huge?system=weatherbug-web&amp;pubtoken=678ff131af548b95f1a9fd7f7e17cb3e21795fc92f5c823fc46cb05429f8950c&amp;refreshRate=30000&amp;rnd=1766528527131">
-</body>
+    <script src="trafficCamXML.js"></script>
+    <img id="webcam" alt="Traffic Camera">
+    <script>
+        const webcamManager = new WebcamManager();
+        const webcamId = 'VT-108 Stowe';
+
+        function updateWebcam(imageUrl) {
+            const imgElement = document.getElementById('webcam');
+            const timestampElement = document.getElementById('timestamp');
+            
+            if (imgElement.src.startsWith('blob:')) {
+                URL.revokeObjectURL(imgElement.src);
+            }
+            imgElement.src = imageUrl;
+            timestampElement.textContent = `Updated: ${new Date().toLocaleTimeString()}`;
+        }
+
+        const refreshInterval = webcamManager.startAutoRefresh(webcamId, updateWebcam);
+
+        window.addEventListener('beforeunload', () => {
+            clearInterval(refreshInterval);
+        });
+    </script>
 </html>
 
 
