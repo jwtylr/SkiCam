@@ -2,6 +2,11 @@
 
     <h1>Smuggs</h1>
     <h2>Weather</h2>
+    <script src="/SkiCam/script/weatherManager.js"></script>
+    <script>
+        const wm = new weatherManager();
+        wm.fetchData();
+    </script>
 
 
 
