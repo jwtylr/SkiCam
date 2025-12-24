@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>SkiCam</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 <body>
     <?php include 'nav.php'; ?>
