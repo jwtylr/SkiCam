@@ -1,6 +1,6 @@
-<?php include 'top.php'; ?>
+<?php include '../top.php'; ?>
 
-    <h1>K-Mart</h1>
+    <h1>Bush</h1>
     <h2>Weather</h2>
     <h2>Info</h2>
     <h2>Resort Webcam</h2>

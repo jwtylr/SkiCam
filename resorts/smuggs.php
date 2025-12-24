@@ -1,4 +1,4 @@
-<?php include 'top.php'; ?>
+<?php include '../top.php'; ?>
 
     <h1>Smuggs</h1>
     <h2>Weather</h2>
@@ -14,8 +14,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
-    <h2>Traffic Cameras</h2> <!-- TODO: Change source to xml with server-side filtering and cache.  -->
-    <script src="trafficCamXML.js"></script>
+    <h2>Traffic Cameras</h2>
+    <script src="/SkiCam/trafficCamXML.js"></script>
     <img id="webcam" alt="Traffic Camera">
     <script>
         const webcamManager = new WebcamManager();

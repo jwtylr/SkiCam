@@ -1,4 +1,4 @@
-<?php include 'top.php'; ?>
+<?php include '../top.php'; ?>
 
     <h1>Bolton</h1>
     <h2>Weather</h2>
