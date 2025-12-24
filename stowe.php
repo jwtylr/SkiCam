@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>SkiCam</title>
-</head>
-<body>
-    <?php include 'nav.php'; ?>
+<?php include 'top.php'; ?>
+
     <h1>Stowe</h1>
     <h2>Weather</h2>
     <h2>Info</h2>
@@ -18,12 +13,5 @@
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
     <h2>Traffic Cameras</h2>
-    <img alt="" 
-        fetchpriority="high" 
-        loading="eager" 
-        decoding="async" 
-        data-nimg="fill" 
-        src="https://ie.trafficland.com/v2.0/455317/huge?system=weatherbug-web&amp;pubtoken=678ff131af548b95f1a9fd7f7e17cb3e21795fc92f5c823fc46cb05429f8950c&amp;refreshRate=30000&amp;rnd=1766528527131">
-</body>
 </body>
 </html>

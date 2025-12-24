@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>SkiCam</title>
-</head>
-<body>
-    <?php include 'nav.php'; ?>
+<?php include 'top.php'; ?>
+
     <h1>K-Mart</h1>
     <h2>Weather</h2>
     <h2>Info</h2>
