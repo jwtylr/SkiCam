@@ -3,7 +3,7 @@ class WebcamManager {
         this.cachedXML = null;
         this.lastFetch = null;
         this.cacheDuration = 3 * 60 * 1000; // 3 minutes
-        this.apiUrl = 'https://jwtaylor.w3.uvm.edu/SkiCam/proxy.php'; // Silk proxy URL  // TODO: Figure out why im not receiving data from the API
+        this.apiUrl = 'https://jwtaylor.w3.uvm.edu/SkiCam/api/webCamProxy.php'; // Silk proxy URL
         this.isFetching = false;
     }
 
