@@ -52,6 +52,7 @@
             clearInterval(refreshInterval);
         });
     </script>
+    <caption>Note: this view is of the south side of VT-108 (Stowe); The north side is not available. It is not a through road.</caption>
 </html>
 
 
