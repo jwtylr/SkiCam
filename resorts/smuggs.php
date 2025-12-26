@@ -9,7 +9,7 @@
     <p id="cloudCover">Cloud Cover: Loading...</p>
     <script src="/SkiCam/script/weatherManager.js"></script>
     <script>
-        const wm = new weatherManager(44.571944, 72.774444);
+        const wm = new weatherManager(44.571944, -72.81333); // Smuggs coordinates, negative longitude
         wm.fetchData();
         
     </script>

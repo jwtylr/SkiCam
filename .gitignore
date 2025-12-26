@@ -1,2 +1,4 @@
 api/webcamProxy.php
 api/weatherProxy.php
+script/webcamManager.js
+script/weatherManager.js
