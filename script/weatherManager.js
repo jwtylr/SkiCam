@@ -1,10 +1,16 @@
 class weatherManager {
-    constructor() {
+    constructor(latitude, longitude) {
         this.cachedData = null;
-        this.latitude = 44.571944;
-        this.longitude = 72.774444; // Coordinates for Smuggs
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.proxyURL = `https://jwtaylor.w3.uvm.edu/SkiCam/api/weatherProxy.php?lat=${this.latitude}&long=${this.longitude}`;
         this.isFetching = false;
+
+        this.temperature = null;
+        this.apparentTemperature = null;
+        this.snowfall = null;
+        this.wind = null;
+        this.cloudCover = null;
     }
 
     async fetchData() {
@@ -25,6 +31,6 @@ class weatherManager {
     }
 
     displayData() {
-        console.log("Weather data:", this.cachedData);
+        console.log(JSON.parse(JSON.stringify(this.cachedData)));
     }
 }

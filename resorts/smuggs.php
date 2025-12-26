@@ -2,10 +2,16 @@
 
     <h1>Smuggs</h1>
     <h2>Weather</h2>
+    <p id="temperature">Temperature: Loading...</p>
+    <p id="apparentTemperature">Apparent Temperature: Loading...</p>
+    <p id="snowfall">Snowfall: Loading...</p>
+    <p id="wind">Wind: Loading...</p>
+    <p id="cloudCover">Cloud Cover: Loading...</p>
     <script src="/SkiCam/script/weatherManager.js"></script>
     <script>
-        const wm = new weatherManager();
+        const wm = new weatherManager(44.571944, 72.774444);
         wm.fetchData();
+        
     </script>
 
 
