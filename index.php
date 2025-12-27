@@ -7,10 +7,10 @@
     <li>Fix smuggs.php:55 Uncaught (in promise) TypeError: Cannot set properties of null (setting 'textContent')
     at updateWebcam (smuggs.php:55:42)
     at refresh (webcamManager.js:90:17)</li>
-    <li>Finish weather API frontend implementation</li>
     <li>Improve responsive design for mobile devices</li>
     <li>Add google maps integration</li>
     <li>User comments for conditions reports?</li>
+    <li>Additional resorts/cams</li>
     <li>Style baby</li>
 </ul>
 </body>
