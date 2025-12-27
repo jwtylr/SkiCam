@@ -2,16 +2,32 @@
 
     <h1>Smuggs</h1>
     <h2>Weather</h2>
-    <p id="temperature">Temperature: Loading...</p>
-    <p id="apparentTemperature">Apparent Temperature: Loading...</p>
-    <p id="snowfall">Snowfall: Loading...</p>
-    <p id="wind">Wind: Loading...</p>
-    <p id="cloudCover">Cloud Cover: Loading...</p>
+    <div id="weatherData">
+        <p>Temperature: <span id="temp">--</span>°F</p>
+        <p>Feels Like: <span id="apparent">--</span>°F</p>
+        <p>Snowfall: <span id="snow">--</span> inches</p>
+        <p>Wind Speed: <span id="wind">--</span> kn</p>
+        <p>Wind Direction: <span id="windDir">--</span>°</p>
+        <p>Cloud Cover: <span id="cloud">--</span>%</p>
+    </div>
+
     <script src="/SkiCam/script/weatherManager.js"></script>
     <script>
-        const wm = new weatherManager(44.571944, -72.81333); // Smuggs coordinates, negative longitude
-        wm.fetchData();
-        
+        (async function () {
+            const smuggsWeather = new weatherManager(44.571944, -72.81333);
+
+            // Fetch data
+            await smuggsWeather.fetchData();
+
+            document.getElementById('temp').textContent = smuggsWeather.temperature ?? '--';
+            document.getElementById('apparent').textContent = smuggsWeather.apparentTemperature ?? '--';
+            document.getElementById('snow').textContent = smuggsWeather.snowfall ?? '--';
+            document.getElementById('wind').textContent = smuggsWeather.windSpeed ?? '--';
+            document.getElementById('windDir').textContent = smuggsWeather.windDirection ?? '--';
+            document.getElementById('cloud').textContent = smuggsWeather.cloudCover ?? '--';
+
+            console.log("Weather data displayed.");
+        })();
     </script>
 
 
