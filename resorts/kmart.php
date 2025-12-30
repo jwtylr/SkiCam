@@ -47,7 +47,7 @@
     <img id="webcam" alt="Traffic Camera">
     <script>
         const webcamManager = new WebcamManager();
-        const webcamId = 'MENDON MOUNTAIN RWIS CCTV WEST';
+        const webcamId = 'MENDON MOUNTAIN RWIS CCTV';
 
         function updateWebcam(imageUrl) {
             const imgElement = document.getElementById('webcam');
