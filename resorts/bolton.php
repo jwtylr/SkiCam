@@ -32,7 +32,7 @@
     <h2>Info</h2>
     <h3>Address:</h3><body>4302 Bolton Valley Access Rd, Bolton Valley, VT 05477</body>
     <h3>Ski Patrol:</h3><body>(802) 434-6823</body>
-
+    <h3>Map:</h3>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6517.049673695023!2d-72.85092909867531!3d44.42024767237798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb59ac2a94c15e3%3A0x15e495118d4d1dbc!2sBolton%20Valley%20Resort!5e1!3m2!1sen!2sus!4v1766882460044!5m2!1sen!2sus" 
                 width="600" 
                 height="450" 
@@ -58,6 +58,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
+            
     <h2>Traffic Cameras</h2>
+
 </body>
 </html>

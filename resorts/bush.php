@@ -32,6 +32,7 @@
     <h2>Info</h2>
     <h3>Address:</h3><body>102 Forest Drive, Warren, VT 05674</body>
     <h3>Ski Patrol:</h3><body>(802) 583-6567</body>
+    <h3>Map:</h3>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28133.220266000353!2d-72.9023327195833!3d44.13893743630129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb56d7b952c28bb%3A0x78dc5cf31c15ff36!2sSugarbush%20Resort!5e1!3m2!1sen!2sus!4v1766886215644!5m2!1sen!2sus"
             width="600" 
             height="450" 
@@ -41,6 +42,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     
     <h2>Resort Webcam</h2>
+
     <h2>Traffic Cameras</h2>
 </body>
 </html>
