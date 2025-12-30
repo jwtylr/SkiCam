@@ -42,6 +42,29 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <h2>Resort Webcam</h2>
+    <script src="/SkiCam/script/webcamManager.js"></script>
+    <img id="webcam" alt="Traffic Camera">
+    <script>
+        const webcamManager = new WebcamManager();
+        const webcamId = 'WESTFIELD RWIS CCTV EAST';
+
+        function updateWebcam(imageUrl) {
+            const imgElement = document.getElementById('webcam');
+            
+            if (imgElement.src.startsWith('blob:')) {
+                URL.revokeObjectURL(imgElement.src);
+            }
+            imgElement.src = imageUrl;
+
+            console.log('Webcam updated.');
+        }
+
+        const refreshInterval = webcamManager.startAutoRefresh(webcamId, updateWebcam);
+
+        window.addEventListener('beforeunload', () => {
+            clearInterval(refreshInterval);
+        });
+    </script>
     
     <h2>Traffic Cameras</h2>
 </body>

@@ -43,5 +43,28 @@
 
     <h2>Resort Webcam</h2>
     <h2>Traffic Cameras</h2>
+    <script src="/SkiCam/script/webcamManager.js"></script>
+    <img id="webcam" alt="Traffic Camera">
+    <script>
+        const webcamManager = new WebcamManager();
+        const webcamId = 'MENDON MOUNTAIN RWIS CCTV WEST';
+
+        function updateWebcam(imageUrl) {
+            const imgElement = document.getElementById('webcam');
+            
+            if (imgElement.src.startsWith('blob:')) {
+                URL.revokeObjectURL(imgElement.src);
+            }
+            imgElement.src = imageUrl;
+
+            console.log('Webcam updated.');
+        }
+
+        const refreshInterval = webcamManager.startAutoRefresh(webcamId, updateWebcam);
+
+        window.addEventListener('beforeunload', () => {
+            clearInterval(refreshInterval);
+        });
+    </script>
 </body>
 </html>

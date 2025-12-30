@@ -50,6 +50,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
+        
     <h2>Traffic Cameras</h2>
     <script src="/SkiCam/script/webcamManager.js"></script>
     <img id="webcam" alt="Traffic Camera">

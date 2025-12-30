@@ -60,6 +60,29 @@
             allowfullscreen></iframe>
             
     <h2>Traffic Cameras</h2>
+    <script src="/SkiCam/script/webcamManager.js"></script>
+    <img id="webcam" alt="Traffic Camera">
+    <script>
+        const webcamManager = new WebcamManager();
+        const webcamId = 'BOLTON RWIS CCTV RT2';
+
+        function updateWebcam(imageUrl) {
+            const imgElement = document.getElementById('webcam');
+            
+            if (imgElement.src.startsWith('blob:')) {
+                URL.revokeObjectURL(imgElement.src);
+            }
+            imgElement.src = imageUrl;
+
+            console.log('Webcam updated.');
+        }
+
+        const refreshInterval = webcamManager.startAutoRefresh(webcamId, updateWebcam);
+
+        window.addEventListener('beforeunload', () => {
+            clearInterval(refreshInterval);
+        });
+    </script>
 
 </body>
 </html>
