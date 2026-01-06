@@ -14,4 +14,4 @@ The Github repo does not contain scripts that access api's.
     - Wind speed & direction
 
 
-
+https://jwtaylor.w3.uvm.edu/SkiCam/index.php
