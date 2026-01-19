@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color:#e6ffe4;
 }
 nav {
     display: flex;
@@ -28,7 +29,7 @@ nav a:not(.activePage):hover {
 }
 
 .activePage {
-    background-color: white;
+    background-color: #e6ffe4;
     color: black;
 }
 
