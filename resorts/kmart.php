@@ -42,6 +42,13 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <h2>Resort Webcam</h2>
+    <iframe src="https://www.killington.com/the-mountain/conditions-weather/webcam/" 
+            width="600" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <h2>Traffic Cameras</h2>
     <script src="/SkiCam/script/webcamManager.js"></script>
     <img id="webcam" alt="Traffic Camera">

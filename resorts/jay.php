@@ -42,6 +42,14 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <h2>Resort Webcam</h2>
+    <iframe src="https://jaypeakresort.com/resort/photo-day?_gl=1*1snvnf5*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCDKBQ8_-6fzBCWgsilFBC6fmXlC4B1fShcL_cbXuWykS1OwldBWBShoCpUQQAvD_BwE&gbraid=0AAAAA-DaZhfbiKyvRW3xJnPFANtV6B2-6" 
+            width="50%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Traffic Cameras</h2>
     <script src="/SkiCam/script/webcamManager.js"></script>
     <img id="webcam" alt="Traffic Camera">
     <script>
@@ -65,7 +73,5 @@
             clearInterval(refreshInterval);
         });
     </script>
-    
-    <h2>Traffic Cameras</h2>
 </body>
 </html>
