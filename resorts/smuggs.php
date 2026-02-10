@@ -31,29 +31,33 @@
     </script>
     
     <section id="infoSection">
-        <h2>Info</h2>
-        <h3>Address:</h3><body>4323 VT-108, Jeffersonville, VT 05464</body>
-        <h3>Ski Patrol:</h3><body>(802) 644-1182</body>
-        <h3>Map:</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41332.96457396241!2d-72.80402945668581!3d44.5957180815963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb592a19406e99b%3A0x5e071107948a3ced!2sSmugglers&#39;%20Notch%20Base%20Lodge!5e1!3m2!1sen!2sus!4v1766875383408!5m2!1sen!2sus" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="infoBox">
+            <h2>Info</h2>
+            <h3>Address:</h3><body>4323 VT-108, Jeffersonville, VT 05464</body>
+            <h3>Ski Patrol:</h3><body>(802) 644-1182</body>
+        </div>
+        <div class="infoBox">
+            <h3>Map:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41332.96457396241!2d-72.80402945668581!3d44.5957180815963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb592a19406e99b%3A0x5e071107948a3ced!2sSmugglers&#39;%20Notch%20Base%20Lodge!5e1!3m2!1sen!2sus!4v1766875383408!5m2!1sen!2sus" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 
     <section id="webcamSection">
         <h2>Resort Webcam</h2>
         <iframe width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/HOhniNpNFZg?si=WEb-PvUBQ0tY4ogi" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen></iframe>
+        height="315" 
+        src="https://www.youtube.com/embed/ixuxMfveOi8?si=WXvgBZiQ1STET-21" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
     </section>
         
     <section id="trafficSection">
